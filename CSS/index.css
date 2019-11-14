@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.leftside {
+    margin-top: 0;
+    margin-left: 0;
+    width: 150px;
+    height: 100%;
+    background: rgb(60, 60, 61);
+    position: fixed;
+    color: white;
+    z-index: 1000;
+}
+
+li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-logo {
+    display: flex;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar-logo a {
+    display: inline;
+}
+
+.sidebar-logo-img {
+    content: url("../img/logo2.jpg");
+    width: 40px;
+    height: 55.8px;
+    margin: 0 0 0 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.sidebar-logo a h1{
+    margin: 15px 0 10px 10px;
+    font-size: 25px;
+}
+
+.sidebar-bdd {
+    border-top: 1px solid white;
+}
+
+li {
+    margin: 13px 0 13px 0;
+}
+
+.sidebar-menu{
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.sidebar-menu1 {
+    content: url("../img/home-5-24.png");
+    width: 20px;
+    margin-right: 10px;
+}
+
+.sidebar-menu2 {
+    content: url("../img/film-2-24.png");
+    width: 20px;
+    margin-right: 10px;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    left: 150px;
+    height: 86px;
+    background-color: rgb(238, 236, 236);
+    
+}
+
+.head-nav{
+    padding: 20px 0 3px 0px;
+    
+}
+
+.head-search {
+    height: 40px;
+    width: 500px;
+    border: 1px solid #1b5ac2;
+    background: #ffffff;
+    text-align: center;
+    margin-left: 25%;
+    position: flex;
+}
+
+input {
+    font-size: 16px;
+    width: 425px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    float: left;
+}
+
+input:-ms-input-placeholder {
+    color: #a8a8a8;
+}
+
+input::-webkit-input-placeholder {
+    color: #a8a8a8;
+}
+
+input:-moz-placeholder {
+    color: #a8a8a8;
+}
+
+button {
+    width: 50px;
+    height: 100%;
+    border: 0px;
+    background: #1b5ac2;
+    outline: none;
+    float: right;
+    color: #ffffff
+}
+
+.content {
+    position: relative;
+    
+    left: 150px;
+    height: 80%;
+    border: 1px solid gold;
+    margin: 0px auto;
+}
+
+.content-head h3{
+    border: 1px solid gold;
+}
+
+.content-record{
+    border: 1px solid gold;
+    display:block;
+    height: 264px;
+    margin: 0px auto;
+}
+
+.content-record i{
+    content: url(../img/data.JPG);
+}
+
+.content-hotvideos{
+    border: 1px solid gold;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+}
+
+.content-hotvideos iframe, .content-hotvideos h3{
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: 225px;
+}
+
+
+
+
+
+
+
+
+
+
+.bottom {
+    position: relative;
+    width: 100%;
+    left: 150px;
+    height: auto;
+    border: 1px solid gold;
+}
