@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>POTG</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="../static/CSS/search.css">
+
+    <!--jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!--Load HTML Files-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#leftSidebar").load("leftSidebar.html");
+            $("#headers").load("headers.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="leftSidebar"></div>
+    <div id="headers"></div>
+
+    <div class="content">
+        <div class = "searchbar">
+
+        </div>
+
+
+        <div class="searchmneubtn">
+            <div class = "searchfilter-filterbtn">
+                <i class="fas fa-bars"><a href="#">필터</a></i>
+            </div>
+            <div>
+                <ul class="content-searchfilter-nav">
+                    <li>
+                        <div>
+                            <div class="nav-column">
+                                <h3>업로드 날짜</h3>
+                                <ul>
+                                    <li><a href="#">오늘</a></li>
+                                    <li><a href="#">이번 주</a></li>
+                                    <li><a href="#">전체</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-column">
+                                <h3>정렬 기준</h3>
+                                <ul>
+                                    <li><a href="#">조회수</a></li>
+                                    <li><a href="#">최신순</a></li>
+                                    <li><a href="#">좋아요순</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

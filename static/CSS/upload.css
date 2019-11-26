@@ -1,0 +1,16 @@
+#dropZone{
+    outline: 2px dashed #92b0b3 ;
+    outline-offset:-10px;  
+    transition: all .15s ease-in-out;
+    width: 300px;
+    height: 300px;
+    display: block;
+    background:gray;
+
+}
+
+.dropZone-text{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
