@@ -8,7 +8,6 @@ video{
     color: gray;
 }
 
-
 .content-hotvideo{
     display:flex;
 }
@@ -31,7 +30,6 @@ video{
 }
 
 .content-hotvideo-group-videotext a{
-    
     color:black;
 }
 

@@ -18,6 +18,16 @@
             $("#headers").load("headers.html");
         });
     </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".searchbar-container-filter>i").click(function () {
+                var submenu = $(".searchbar-container-filtermenu");
+                submenu.animate({ height: "toggle", opacity: "toggle" }, "fast");
+                submenu.css('display', 'block');
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -25,42 +35,106 @@
     <div id="headers"></div>
 
     <div class="content">
-        <div class = "searchbar">
-
-        </div>
-
-
-        <div class="searchmneubtn">
-            <div class = "searchfilter-filterbtn">
-                <i class="fas fa-bars"><a href="#">필터</a></i>
+        <div class="searchbar-container">
+            <div class="searchbar-container-filter">
+                <i class="fas fa-bars "><a>필터</a></i>
             </div>
-            <div>
-                <ul class="content-searchfilter-nav">
-                    <li>
-                        <div>
-                            <div class="nav-column">
-                                <h3>업로드 날짜</h3>
-                                <ul>
-                                    <li><a href="#">오늘</a></li>
-                                    <li><a href="#">이번 주</a></li>
-                                    <li><a href="#">전체</a></li>
-                                </ul>
-                            </div>
 
-                            <div class="nav-column">
-                                <h3>정렬 기준</h3>
-                                <ul>
-                                    <li><a href="#">조회수</a></li>
-                                    <li><a href="#">최신순</a></li>
-                                    <li><a href="#">좋아요순</a></li>
-                                </ul>
-                            </div>
+            <div class="searchbar-container-filtermenu">
+                <div class="searchbar-container-filterlist">
+                    <h5>업로드 날짜</h5>
+                    <ul>
+                        <li><a href="#">오늘</a></li>
+                        <li><a href="#">이번주</a></li>
+                        <li><a href="#">전체</a></li>
+                    </ul>
+                </div>
+                <div class="searchbar-container-filterlist">
+                    <h5>정렬기준</h5>
+                    <ul>
+                        <li><a href="#">조회순</a></li>
+                        <li><a href="#">최신순</a></li>
+                        <li><a href="#">인기순</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-list-head"></div>
+            <div class="search-list">
+
+                <div class="search-list-group">
+
+                    <video class="search-list-group-video" controls>
+                        <source src="../video/data1.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="search-list-group-comment">
+                        <div class="search-list-group-comment-videoname">
+                            【11/21】 굿바이도벽 .. 도파의 마지막 도벽 트페 vs 녹턴 ( TF vs Nocturne Dopa stream Nov.21 )
                         </div>
-                    </li>
-                </ul>
-            </div>
+                        <div class="search-list-group-comment-videoDes">
+                            조회수 140,227회 •2019. 11. 24.
+                        </div>
+                    </div>
+                </div>
 
+                <div class="search-list-group">
+
+                    <video class="search-list-group-video" controls>
+                        <source src="../video/data2.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="search-list-group-comment">
+                        <div class="search-list-group-comment-videoname">
+                            【11/21】 굿바이도벽 .. 도파의 마지막 도벽 트페 vs 녹턴 ( TF vs Nocturne Dopa stream Nov.21 )
+                        </div>
+                        <div class="search-list-group-comment-videoDes">
+                            조회수 140,227회 •2019. 11. 24.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-list-group">
+
+                    <video class="search-list-group-video" controls>
+                        <source src="../video/data3.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="search-list-group-comment">
+                        <div class="search-list-group-comment-videoname">
+                            【11/21】 굿바이도벽 .. 도파의 마지막 도벽 트페 vs 녹턴 ( TF vs Nocturne Dopa stream Nov.21 )
+                        </div>
+                        <div class="search-list-group-comment-videoDes">
+                            조회수 140,227회 •2019. 11. 24.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-list-group">
+
+                    <video class="search-list-group-video" controls>
+                        <source src="../video/data4.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="search-list-group-comment">
+                        <div class="search-list-group-comment-videoname">
+                            【11/21】 굿바이도벽 .. 도파의 마지막 도벽 트페 vs 녹턴 ( TF vs Nocturne Dopa stream Nov.21 )
+                        </div>
+                        <div class="search-list-group-comment-videoDes">
+                            조회수 140,227회 •2019. 11. 24.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+    </div>
+
+
+
+
 
 
 
