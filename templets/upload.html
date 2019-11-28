@@ -6,9 +6,7 @@
     <title>POTG</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link rel="stylesheet" href="../static/CSS/upload.css">
-    <!--jquery cdn-->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="../static/JS/jquery-3.4.1.min.js"></script>    
     <!--Load HTML Files-->
     <script type="text/javascript">
         $(document).ready(function () {
@@ -20,19 +18,19 @@
     <script type="text/javascript" src="../static/JS/fileupload.js"></script>
 
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             var fileTarget = $('.filebox .upload-hidden');
-          
-              fileTarget.on('change', function(){
-                  if(window.FileReader){
-                      var filename = $(this)[0].files[0].name;
-                  } else {
-                      var filename = $(this).val().split('/').pop().split('\\').pop();
-                  }
-          
-                  $(this).siblings('.upload-name').val(filename);
-              });
-          }); 
+
+            fileTarget.on('change', function () {
+                if (window.FileReader) {
+                    var filename = $(this)[0].files[0].name;
+                } else {
+                    var filename = $(this).val().split('/').pop().split('\\').pop();
+                }
+
+                $(this).siblings('.upload-name').val(filename);
+            });
+        }); 
     </script>
 
 </head>
@@ -42,16 +40,20 @@
     <div id="headers"></div>
 
     <div class="content">
-        <form>
-            <div class="filebox bs3-primary">
-                <input class="upload-name" value="파일선택" disabled="disabled">
-                <label for="ex_filename">업로드</label>
-                <input type="file" id="ex_filename" class="upload-hidden">
-            </div>
+        <div class="upload-container">
+            <form>
+                <div class="filebox bs3-primary">
+                    <input class="upload-name" value="파일선택" disabled="disabled">
+                    <label for="ex_filename">업로드</label>
+                    <input type="file" id="ex_filename" class="upload-hidden">
+
+                </div>
+                <input type="text">
 
 
+            </form>
+        </div>
 
-        </form>
 
 
     </div>
